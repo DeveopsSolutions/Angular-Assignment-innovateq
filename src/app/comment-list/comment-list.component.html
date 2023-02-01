@@ -1,0 +1,17 @@
+
+<div class="main-container">
+    <app-table-data
+        [tableData]="commentslist"
+        [tableColumns]="commentTableColumns"
+        [isPageable]="true"
+        [isFilterable]="true"
+        [isFilterable]="true"
+        [isPageable]="true"
+        [paginationSizes]="[2,4,6]"
+        [defaultPageSize]="5"
+        (sort)="sortData($event)"
+        [title]="title"
+        (rowAction)="removeOrder($event)">
+    >
+    </app-table-data>
+    </div>

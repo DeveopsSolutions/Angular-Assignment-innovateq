@@ -1,0 +1,16 @@
+<div class="main-container">
+    <app-table-data
+        [tableData]="postlist"
+        [tableColumns]="postTableColumns"
+        [isPageable]="true"
+        [isFilterable]="true"
+        [isFilterable]="true"
+        [isPageable]="true"
+        [paginationSizes]="[2,4,6]"
+        [defaultPageSize]="5"
+        [title]="title"
+        (sort)="sortData($event)"
+        (rowAction)="removeOrder($event)">
+    >
+    </app-table-data>
+    </div>

@@ -1,0 +1,20 @@
+<div class="main-container">
+<app-table-data
+    [tableData]="userslist"
+    [tableColumns]="userTableColumns"
+    [isPageable]="true"
+    [isFilterable]="true"
+    [isFilterable]="true"
+    [isPageable]="true"
+    [paginationSizes]="[2,4,6]"
+    [defaultPageSize]="5"
+    [title]="title"
+    [tooltip]="'route works here'"
+    (sort)="sortData($event)"
+    [rowActionIcon]="'delete_outline'"
+    (rowAction)="removeOrder($event)"
+    (getrowDetails)="getrowDetails($event)"
+    >
+>
+</app-table-data>
+</div>

@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 10px !important;
+  }
+  
+  mat-form-field {
+    width: 40%;
+  }
+  
+  .text-right {
+    text-align: right !important;
+  }
+  .mat-row:nth-child(4n-1),
+.mat-row:nth-child(4n) {
+  background-color: #eee;
+}
+
+.mat-row {
+  background-color: white;
+}

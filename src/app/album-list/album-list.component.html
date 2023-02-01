@@ -1,0 +1,16 @@
+<div style="padding: 20px;">
+    <ng-container *ngFor="let card of albumslist">
+        <mat-card>
+            <mat-icon><img src="../../assets/images/logo.jpg" style="border-radius: 10px;"></mat-icon>
+            <mat-card-header>
+                <mat-card-title><span>Album Id :</span>{{card.id}}</mat-card-title>
+                <mat-card-subtitle><span>Name :</span>{{card.name}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <span>Description :</span>
+                <p>{{card.body}}</p>
+            </mat-card-content>
+        </mat-card>
+        <br>
+    </ng-container>
+</div>
